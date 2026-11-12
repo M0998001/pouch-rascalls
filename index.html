@@ -2,6 +2,20 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <title>Pouch Rascalls</title>
+<meta name="description" content="A cozy monster-taming RPG in your browser. Catch, raise, breed and battle rascals, build your ranch and home, and meet legends.">
+<meta name="theme-color" content="#2a1f2d">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Rascalls">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta property="og:title" content="Pouch Rascalls"><meta property="og:type" content="website">
+<meta property="og:description" content="Catch, raise and befriend rascals in a cozy pixel-art RPG. Plays right in your browser on phone, tablet or computer.">
+<meta property="og:image" content="https://m0998001.github.io/pouch-rascalls/icons/social.png"><meta property="og:url" content="https://m0998001.github.io/pouch-rascalls/">
+<meta name="twitter:card" content="summary_large_image">
 <style>:root{--cream:#fff6e5;--cream2:#f6e7c8;--brown:#6b4a3a;--brown2:#8a6a52;--ink:#3a2a2a;--accent:#e2584f;--ctrlH:44px;--green:#5fae45}
 @media (pointer:coarse){:root{--ctrlH:196px}}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -469,6 +483,17 @@ table.stats{width:100%;border-collapse:collapse;font-size:14px}table.stats td{pa
 .liftCv{width:100%;height:100%;object-fit:fill;image-rendering:pixelated}
 .liftCap{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);background:rgba(40,25,25,.6);color:#fff;font-weight:800;padding:4px 12px;border-radius:12px}
 .liftP{position:relative}
+/* ---------- iOS polish ---------- */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+html.ios,html.ios body{position:fixed;inset:0;overflow:hidden;width:100%}
+html.ios #app{height:-webkit-fill-available;height:100dvh}
+html.ios img,html.ios canvas{-webkit-touch-callout:none;-webkit-user-drag:none}
+.gSearch{font-size:16px}
+html.standalone #app.touch{padding-top:env(safe-area-inset-top)}
+.a2hs{position:absolute;left:50%;bottom:max(46px,calc(env(safe-area-inset-bottom) + 40px));transform:translateX(-50%);width:min(92%,420px);background:#fff6e5;border:3px solid #6b4426;border-radius:14px;padding:10px 34px 10px 12px;font-size:13px;line-height:1.35;color:#4a2a1e;box-shadow:0 4px 0 rgba(30,15,10,.35);z-index:4;pointer-events:auto!important}
+.a2hs button{position:absolute;top:6px;right:6px;border:none;background:#e8d0a0;border-radius:50%;width:24px;height:24px;font-weight:900;color:#4a2a1e}
+.a2hs .shareIco{display:inline-block;border:2px solid #4a90d9;color:#4a90d9;border-radius:4px;padding:0 3px;font-weight:900;line-height:1}
 </style></head>
 <body><div id="app">
   <div id="screen">
@@ -7735,6 +7760,21 @@ if(typeof GUIDE!=='undefined'){GUIDE.push(['World','seasons','Seasons','Every 7 
 // ===================== TITLE SCREEN: a living meadow diorama =====================
 // A hand-drawn pixel landscape that follows the real time of day and season; rascals (your own party, if you have a save)
 // wander, nap and hop in the meadow. Tap one to say hi. Legends sometimes drift across the sky.
+// the big drawstring pouch used by the logo and the app icon (back half = opening, front half = bag)
+function pouchArt(){if(pouchArt.c)return pouchArt.c;
+      const pc=document.createElement('canvas');pc.width=pc.height=34;const px=pc.getContext('2d');const N=34,cell=new Array(N*N).fill(null);
+      const put=(X,Y,c)=>{if(X>=0&&Y>=0&&X<N&&Y<N)cell[Y*N+X]=c;};
+      const ell=(cx,cy,rx,ry,c,cond)=>{for(let Y=0;Y<N;Y++)for(let X=0;X<N;X++){const dx=(X+.5-cx)/rx,dy=(Y+.5-cy)/ry;if(dx*dx+dy*dy<=1&&(!cond||cond(X,Y)))put(X,Y,c);}};
+      ell(17,23,14,10,'#e2584f');ell(17,13,8,3.2,'#e2584f');for(let Y=12;Y<16;Y++)for(let X=9;X<26;X++)put(X,Y,'#e2584f');
+      ell(17,9,11.5,3.4,'#f08a7a');ell(17,9,9,2,'#5a2a2a');
+      ell(17,23,14,10,'#b8403a',(X,Y)=>Y>27||X>27);ell(12,20,4,3,'#f4a090');
+      for(let X=6;X<29;X++)for(let Y=17;Y<20;Y++)if(cell[Y*N+X])put(X,Y,Y===19?'#e8d0a0':'#fff1d0');
+      for(let X=9;X<26;X++){put(X,14,'#ffd86b');}ell(17,15,2.2,2,'#ffd86b');put(13,16,'#ffd86b');put(12,17,'#ffd86b');put(21,16,'#ffd86b');put(22,17,'#ffd86b');
+      ell(17,25,3,2.6,'#ffd86b');ell(17,25,1.5,1.2,'#f2b53a');
+      const fin=cell.slice();for(let Y=0;Y<N;Y++)for(let X=0;X<N;X++){if(fin[Y*N+X])continue;for(const [a,b2] of [[0,1],[0,-1],[1,0],[-1,0]]){const xx=X+a,yy=Y+b2;if(xx>=0&&yy>=0&&xx<N&&yy<N&&fin[yy*N+xx]){cell[Y*N+X]='#3a1e18';break;}}}
+const bc=document.createElement('canvas');bc.width=bc.height=N;const bx=bc.getContext('2d');
+      for(let i=0;i<N*N;i++)if(cell[i]){const Y=Math.floor(i/N);const back=cell[i]==='#5a2a2a'||Y<9;(back?bx:px).fillStyle=cell[i];(back?bx:px).fillRect(i%N,Y,1,1);}
+return pouchArt.c={back:bc,front:pc};}
 const TITLE_SEASON=()=>{const mo=new Date().getMonth();return mo<2||mo===11?'winter':mo<5?'spring':mo<8?'summer':'autumn';};
 function titlePhase(){const d=new Date(),h=d.getHours()+d.getMinutes()/60;return h<5.5||h>=20.2?'night':h<7.5?'dawn':h<17.6?'day':'dusk';}
 const TPAL={day:{sky:['#6ec0f0','#cfeeff'],far:'#9cc4dc',tint:null},dawn:{sky:['#f2a0b8','#ffe2b0'],far:'#c8a0c0',tint:'rgba(255,160,140,.12)'},
@@ -7857,8 +7897,8 @@ UI.title=function(){_titleT2.call(this);const ov=$('#overlay'),panel=ov.querySel
   for(const sel of ['.logo','.tagline','.titleMons'])wrap.querySelectorAll(sel).forEach(e=>e.remove());
   const letters=(w,cls)=>[...w].map((ch,i)=>`<span class="${cls}" style="animation-delay:${i*.09}s">${ch}</span>`).join('');
   const logo=document.createElement('div');logo.className='logo2';
-  logo.innerHTML=`<div class="lgTop">${letters('P','lp')}<canvas class="lgPouch" width="16" height="16"></canvas>${letters('UCH','lp')}</div><div class="lgBot">${letters('RASCALLS','lr')}</div><div class="lgSub">✦ Catch · Raise · Battle · Befriend ✦</div>`;
-  wrap.prepend(logo);const pc=logo.querySelector('.lgPouch').getContext('2d');pouchIcon(pc,0,0);
+  logo.innerHTML=`<div class="lgTop">${letters('P','lp')}<canvas class="lgPouch" width="34" height="34"></canvas>${letters('UCH','lp')}</div><div class="lgBot">${letters('RASCALLS','lr')}</div><div class="lgSub">✦ Catch · Raise · Battle · Befriend ✦</div>`;
+  wrap.prepend(logo);const pc=logo.querySelector('.lgPouch').getContext('2d');const PA=pouchArt();pc.drawImage(PA.back,0,0);pc.drawImage(PA.front,0,0);
   const col=wrap.querySelector('.col');if(col){col.classList.add('tBoard');
     const small=[...col.querySelectorAll('.btn:not(.big)')];if(small.length){const gd=document.createElement('div');gd.className='tSmall';small.forEach(b=>{b.classList.add('sm');gd.appendChild(b);});col.appendChild(gd);}
     const cont=col.querySelector('#tCont');if(cont&&save&&save.party){const row=document.createElement('span');row.className='tParty';row.innerHTML=save.party.slice(0,6).map(m=>SPECIES[m.sp]?`<img class="pix" src="${spriteURL(m.sp,m.hue||0)}">`:'').join('');cont.appendChild(row);}}
@@ -8040,6 +8080,33 @@ UI.settings=function(back){_settingsGQ.call(this,back);const col=document.queryS
   box.querySelectorAll('[data-gq]').forEach(b=>b.onclick=()=>{c.gfx=b.dataset.gq;R3.q=c.gfx==='low'?.55:1;SND.saveCfg();this.settings(back);});};
 addEventListener('load',()=>fitScreen());setTimeout(fitScreen,60);setTimeout(fitScreen,600);
 const _startWorldM=startWorld;startWorld=function(...a){const r=_startWorldM.apply(this,a);fitScreen();return r;};
+
+// ===================== iPHONE & iPAD POLISH =====================
+const IS_IOS=/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+const IS_STANDALONE=!!(navigator.standalone||matchMedia('(display-mode: standalone)').matches);
+document.documentElement.classList.toggle('ios',IS_IOS);document.documentElement.classList.toggle('standalone',IS_STANDALONE);
+// Sound: iOS only unlocks audio on touchend/click, suspends it when the app is backgrounded, and mutes it with the silent switch unless we ask for "playback".
+['touchend','click'].forEach(e=>addEventListener(e,()=>SND.init(),{capture:true,passive:true}));
+try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch(e){}
+document.addEventListener('visibilitychange',()=>{if(!SND.ctx)return;if(document.hidden){try{SND.ctx.suspend();}catch(e){}}else{try{SND.ctx.resume();}catch(e){}}});
+addEventListener('pageshow',()=>{if(SND.ctx&&SND.ctx.state!=='running')try{SND.ctx.resume();}catch(e){}});
+// No pinch/double-tap zoom, no rubber-band scrolling of the whole page, no image drag/callout menus
+document.addEventListener('gesturechange',e=>e.preventDefault());document.addEventListener('gestureend',e=>e.preventDefault());
+function _canScroll(el){for(let n=el;n&&n!==document.body;n=n.parentElement){const cs=getComputedStyle(n);if(/(auto|scroll)/.test(cs.overflowY+cs.overflowX)&&(n.scrollHeight>n.clientHeight+1||n.scrollWidth>n.clientWidth+1))return true;}return false;}
+document.addEventListener('touchmove',e=>{if(e.touches.length>1||!_canScroll(e.target))e.preventDefault();},{passive:false});
+document.addEventListener('dragstart',e=>{if(e.target.tagName==='IMG'||e.target.tagName==='CANVAS')e.preventDefault();});
+document.addEventListener('contextmenu',e=>{if(!e.target.closest('input,textarea'))e.preventDefault();});
+// Keep saves safe: ask the browser not to evict our storage (Safari clears site data after 7 days unused unless the game is on the Home Screen)
+try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist();}catch(e){}
+// Re-fit when the iOS toolbar shows/hides or the iPad window is resized (Split View / Stage Manager)
+addEventListener('resize',()=>{clearTimeout(window._fitT);window._fitT=setTimeout(()=>{fitScreen();},120);});
+// Offline play + instant launch from the Home Screen (only on the real website, not inside previews)
+if('serviceWorker' in navigator&&location.protocol==='https:'&&/github\.io$/.test(location.hostname)){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
+// One-time tip on the title screen: add to Home Screen for full-screen play and safer saves
+const _titleIOS=UI.title;UI.title=function(){_titleIOS.call(this);if(!IS_IOS||IS_STANDALONE)return;let seen=false;try{seen=localStorage.getItem('pr_a2hs')==='1';}catch(e){}if(seen)return;
+  const wrap=document.querySelector('.titleP .title');if(!wrap)return;const tip=document.createElement('div');tip.className='a2hs';
+  tip.innerHTML=`<b>📲 Play full-screen!</b> Tap <span class="shareIco">⬆︎</span> <b>Share</b>, then <b>Add to Home Screen</b>. Your saves stay safer there, too.<button aria-label="Dismiss">✕</button>`;
+  tip.querySelector('button').onclick=()=>{try{localStorage.setItem('pr_a2hs','1');}catch(e){}tip.remove();};wrap.appendChild(tip);};
 </script>
 <script>
 document.getElementById('dialog').addEventListener('click',()=>{if(Dialog.active&&!Dialog.choices)Dialog.press('a');else if(Dialog.typing)Dialog.finishType();});
