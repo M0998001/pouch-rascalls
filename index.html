@@ -494,6 +494,39 @@ html.standalone #app.touch{padding-top:env(safe-area-inset-top)}
 .a2hs{position:absolute;left:50%;bottom:max(46px,calc(env(safe-area-inset-bottom) + 40px));transform:translateX(-50%);width:min(92%,420px);background:#fff6e5;border:3px solid #6b4426;border-radius:14px;padding:10px 34px 10px 12px;font-size:13px;line-height:1.35;color:#4a2a1e;box-shadow:0 4px 0 rgba(30,15,10,.35);z-index:4;pointer-events:auto!important}
 .a2hs button{position:absolute;top:6px;right:6px;border:none;background:#e8d0a0;border-radius:50%;width:24px;height:24px;font-weight:900;color:#4a2a1e}
 .a2hs .shareIco{display:inline-block;border:2px solid #4a90d9;color:#4a90d9;border-radius:4px;padding:0 3px;font-weight:900;line-height:1}
+/* ---------- world map v2 ---------- */
+.wmPanel{gap:8px}
+.wmWrap{overflow:auto;border-radius:16px;border:4px solid #6b4426;box-shadow:0 4px 0 rgba(40,20,10,.3);max-height:min(62vh,640px);background:#7cc0ef}
+.worldMap2{position:relative;width:100%;min-width:340px;aspect-ratio:1/1.05;background:
+  radial-gradient(circle at 20% 30%,rgba(255,255,255,.18) 0 2px,transparent 3px) 0 0/14px 14px,
+  linear-gradient(160deg,#b8e08a 0%,#9fd16c 45%,#8cc45c 100%);overflow:hidden}
+.wmSea{position:absolute;left:36%;top:58%;width:46%;height:48%;background:#7cc0ef;border-radius:44% 30% 0 0;box-shadow:inset 0 0 0 3px rgba(255,255,255,.35)}
+.wmSea.s2{left:-8%;top:96%;width:60%;height:20%;border-radius:50% 50% 0 0}
+.wmMtn{position:absolute;left:38%;top:0;width:44%;height:30%;background:linear-gradient(180deg,#e8f2fa 0 18%,#b8a890 18% 100%);clip-path:polygon(0 100%,10% 40%,20% 70%,34% 10%,48% 60%,62% 20%,76% 64%,90% 30%,100% 100%);opacity:.55}
+.wmForest{position:absolute;left:18%;top:62%;width:26%;height:18%;background:radial-gradient(circle,#4f9e3e 0 5px,transparent 6px) 0 0/12px 12px;opacity:.5;border-radius:40%}
+.wmCompass{position:absolute;right:3%;top:3%;font-weight:900;font-size:12px;color:#6b4426;text-align:center;line-height:1;background:rgba(255,246,229,.8);border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:2px solid #6b4426}
+.wmLines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.wmLines line{stroke:#d8c49a;stroke-width:1.2;stroke-dasharray:1.6 1.4;opacity:.55;vector-effect:non-scaling-stroke}
+.wmLines line.seen{stroke:#f3dfa8;stroke-width:2.6;stroke-dasharray:none;opacity:1}
+.wmLines line.sea{stroke:#ffffff;stroke-dasharray:3 2}.wmLines line.silk{stroke:#e8e0ff;stroke-dasharray:1 2}
+.wmNode{position:absolute;transform:translate(-50%,-50%);border:none;background:none;padding:0;display:flex;flex-direction:column;align-items:center;cursor:pointer;z-index:2;font:inherit}
+.wmDot{display:flex;align-items:center;justify-content:center;font-style:normal;width:16px;height:16px;border-radius:50%;background:#a09a90;border:2.5px solid #fff;box-shadow:0 2px 0 rgba(0,0,0,.25);font-size:11px}
+.wmNode.town .wmDot,.wmNode.cave .wmDot{width:26px;height:26px;border-radius:8px;font-size:15px}
+.wmNode.seen .wmDot{background:#f2b53a}.wmNode.town.seen .wmDot{background:#fff6e5;border-color:#e2584f}.wmNode.cave.seen .wmDot{background:#d8c8b0}
+.wmNode.port .wmDot::after{content:'🪶';position:absolute;transform:translate(10px,-10px);font-size:10px}
+.wmNode span{margin-top:2px;white-space:nowrap;font-size:10px;font-weight:900;color:#3a2a2a;background:rgba(255,246,229,.85);padding:0 4px;border-radius:6px}
+.wmNode:not(.seen) span{color:#8a7a6a;font-style:italic}
+.wmNode.sel .wmDot{outline:3px solid #4a90d9;outline-offset:2px}
+.wmNode.here .wmDot{box-shadow:0 0 0 5px rgba(226,88,79,.35);animation:wmPulse 1.2s infinite}
+@keyframes wmPulse{50%{box-shadow:0 0 0 9px rgba(226,88,79,.08)}}
+.wmMark{position:absolute;top:-14px;right:-12px;font-size:13px;animation:bob 1s infinite}
+.wmBird{position:absolute;font-size:26px;z-index:5;filter:drop-shadow(0 3px 2px rgba(0,0,0,.3));pointer-events:none}
+.wmCard{background:#fff6e5;border:3px solid #6b4426;border-radius:12px;padding:8px 10px;min-height:52px;display:flex;flex-direction:column;gap:4px}
+.wmCard b{font-size:16px}.wmCard .btn{align-self:flex-start}
+.wmLegend{opacity:.8}
+.wmSea{left:30%;top:60%;width:50%;height:30%;border-radius:45% 40% 50% 45%}.wmSea.s2{display:none}
+.wmNode span{font-size:9px;max-width:64px;white-space:normal;text-align:center;line-height:1.05}
+.worldMap2{min-width:0}
 </style></head>
 <body><div id="app">
   <div id="screen">
@@ -8041,6 +8074,63 @@ for(const [mapId,L] of Object.entries(LIFT)){const near=mapId==='saltreach'?[19,
 if(typeof GUIDE!=='undefined'){GUIDE.push(['World','silkline','Silkline Spider Lift','Madame Loom, a very polite giant spider, carries you in her basket between <b>Saltreach Harbor</b> and the <b>top of Gale Bluffs</b>. The first ride is free, then 60 coins.']);
   GUIDE.push(['World','tug','Tug-o\'-War','Heidi K. runs a button-mashing Tug-o\'-War at Saltreach Harbor. Tap MASH (or hammer Z / Space) as fast as you can to drag the flag to your side before time runs out. Your lead rascal\'s Attack and Defense make each pull stronger. Beat all three rounds for the Tug Champion Belt; repeat wins pay a daily prize.']);
   GUIDE.push(['World','heidi','Heidi K.','A sharp-tongued tamer who thinks she\'s your real rival (sorry, Andrew). She\'ll battle you, tease you, and — if you\'re kind to her — maybe admit she likes you. Look for her in Whisperwood, Saltreach, Frostpine Trail and Ashen Path.']);}
+
+// ===================== WORLD MAP (fixed & redesigned) + FAST TRAVEL =====================
+// Fast travel: fly with the Seagulp Express to any place you've visited that has a Respite Station (or home).
+// Unlocks with your first badge from the menu map; before that, every Respite Station has a Travel Board you can use.
+for(const k of Object.keys(WORLD))if(!MAPS[k]||/^home|^barn$/.test(k))delete WORLD[k];
+const MAP_KIND={burrowby:'town',mossbrook:'town',saltreach:'town',sparkton:'town',glacia:'town',emberfall:'town',lumina:'town',den:'cave',cinder:'cave',crater:'cave'};
+function mapRoot(m){m=m||curMap();let id=m.id;if(/^home|^barn$/.test(id))return 'burrowby';for(let i=0;i<4&&MAPS[id]&&MAPS[id].parentId;i++)id=MAPS[id].parentId;if(/^home|^barn$/.test(id))return 'burrowby';return id;}
+function stationOf(id){if(id==='burrowby')return {map:'burrowby',x:22,y:19,name:'Your Home'};
+  for(const k in MAPS){const m=MAPS[k];if(m.indoor&&m.parentId===id&&/Respite Station/.test(m.name||'')&&m.warps&&m.warps[0])return {map:id,x:m.warps[0].tx,y:m.warps[0].ty,name:m.name};}return null;}
+function WP(p){return [7+p[0]*.84,5+p[1]*.88];}
+function travelUnlocked(){return flag('badge1')||flag('badge2');}
+const _cmTravel=changeMap;changeMap=async function(to,x,y,dir){const r=await _cmTravel(to,x,y,dir);try{G.visited=G.visited||{};G.visited[mapRoot(MAPS[to])]=1;}catch(e){}return r;};
+function mapStats(id){const m=MAPS[id];if(!m||!m.enc)return null;const sp=[...new Set(m.enc.list.map(e=>e[0]))];const fish=(typeof FISH!=='undefined'&&FISH[id])?FISH[id].map(e=>e[0]):[];const all=[...new Set([...sp,...fish])];
+  return {total:all.length,caught:all.filter(s=>G.dex.caught[s]).length,seen:all.filter(s=>G.dex.seen&&G.dex.seen[s]).length,lv:m.enc.list.length?[Math.min(...m.enc.list.map(e=>e[1])),Math.max(...m.enc.list.map(e=>e[2]))]:null};}
+UI.townMap=function(back,opts){opts=opts||{};G.visited=G.visited||{};const here=mapRoot();G.visited[here]=1;const canTravel=!!opts.board||travelUnlocked();
+  const links=new Set();for(const id in WORLD)for(const w of (MAPS[id].warps||[])){const t=mapRoot(MAPS[w.to]||{id:w.to});if(WORLD[t]&&t!==id)links.add([id,t].sort().join('|'));}
+  for(const [a,b] of [['ripple','saltreach'],['saltreach','emberfall'],['galebluffs','den']])if(WORLD[a]&&WORLD[b])links.add([a,b].sort().join('|')+'|sea');
+  links.add(['galebluffs','saltreach'].sort().join('|')+'|silk');
+  let story=null;try{story=storyObjective()[1];}catch(e){}const quests=new Set();for(const q in (G.quests||{}))if(G.quests[q]==='active'){try{const m=questMap(q);if(m)quests.add(m);}catch(e){}}
+  const lines=[...links].map(l=>{const [a,b,kind]=l.split('|');if(!WORLD[a]||!WORLD[b])return '';const [x1,y1]=WP(WORLD[a]),[x2,y2]=WP(WORLD[b]);return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" class="${kind||''} ${G.visited[a]&&G.visited[b]?'seen':''}"/>`;}).join('');
+  const nodes=Object.entries(WORLD).map(([id,pos])=>{const [x,y]=WP(pos);const v=!!G.visited[id],k=MAP_KIND[id]||'route',st=stationOf(id);const mark=id===story?'⭐':quests.has(id)?'❗':'';
+    return `<button class="wmNode ${k} ${v?'seen':''} ${id===here?'here':''} ${v&&st?'port':''}" style="left:${x}%;top:${y}%" data-id="${id}"><i class="wmDot">${k==='town'?'🏠':k==='cave'?'⛰️':''}</i>${mark?`<b class="wmMark">${mark}</b>`:''}<span>${v||mark?MAPS[id].name:'???'}</span></button>`;}).join('');
+  const sub=opts.board?'🪧 Travel Board — pick any place you\'ve visited with a Respite Station.':canTravel?'Tap a place, then fly there with the Seagulp Express 🐦':'Tap places to learn about them. Fast travel unlocks with your first badge — or use the Travel Board in any Respite Station.';
+  this.show(`<h2>🗺️ Hollowvale</h2><div class="small center wmSub">${sub}</div>
+    <div class="wmWrap"><div class="worldMap2"><div class="wmSea"></div><div class="wmSea s2"></div><div class="wmMtn"></div><div class="wmForest"></div><div class="wmCompass">N<br>✦</div>
+      <svg class="wmLines" viewBox="0 0 100 100" preserveAspectRatio="none">${lines}</svg>${nodes}<div class="wmBird hidden">🐦</div></div></div>
+    <div class="wmCard" id="wmCard"></div>
+    <div class="small center wmLegend">🏠 town · ⛰️ cave · 🪶 Respite Station (fast travel) · ⭐ story · ❗ quest</div>
+    <div class="row"><button class="btn" id="mapB">Back</button></div>`,'wmPanel');
+  $('#mapB').onclick=()=>back?back():this.close();
+  const card=$('#wmCard');
+  const select=id=>{document.querySelectorAll('.wmNode').forEach(n=>n.classList.toggle('sel',n.dataset.id===id));const v=!!G.visited[id],m=MAPS[id],st=stationOf(id),S=mapStats(id);
+    if(!v){card.innerHTML=`<b>??? </b><div class="small">You haven't been here yet.${id===story?' ⭐ Your story continues here!':''}${quests.has(id)?' ❗ A quest leads here.':''}</div>`;return;}
+    const info=[];if(id===here)info.push('📍 You are here');if(S){info.push(`🐾 ${S.caught}/${S.total} caught here`);if(S.lv)info.push(`Lv ${S.lv[0]}–${S.lv[1]}`);}
+    if(st)info.push(`🪶 ${st.name}`);else info.push('No Respite Station — can\'t fly here');if(id===story)info.push('⭐ Story');if(quests.has(id))info.push('❗ Quest');
+    const fly=st&&id!==here&&canTravel;card.innerHTML=`<b>${MAPS[id].name}</b><div class="small">${info.join(' · ')}</div>${fly?`<button class="btn primary" id="wmFly">🐦 Fly here</button>`:st&&id!==here&&!canTravel?'<div class="small">🔒 Fast travel unlocks with your first badge.</div>':''}`;
+    const fb=$('#wmFly');if(fb)fb.onclick=()=>flyTo(id);};
+  const flyTo=async id=>{const st=stationOf(id);if(!st)return;if(mode!=='world'&&!opts.board){}
+    document.querySelectorAll('.wmNode,#wmFly,#mapB').forEach(b=>b.disabled=true);const bird=document.querySelector('.wmBird');const [x1,y1]=WP(WORLD[here]||WORLD[id]),[x2,y2]=WP(WORLD[id]);
+    bird.classList.remove('hidden');bird.style.left=x1+'%';bird.style.top=y1+'%';bird.style.transform=`translate(-50%,-50%) scaleX(${x2<x1?1:-1})`;SND.sfx('select');
+    await sleep(60);bird.style.transition='left 1.3s ease-in-out, top 1.3s ease-in-out';bird.style.left=x2+'%';bird.style.top=y2+'%';await sleep(1400);
+    this.close();runScript(async()=>{await changeMap(st.map,st.x,st.y,'down');SND.sfx('item');toast(`🐦 Arrived at ${MAPS[id].name}!`);});};
+  document.querySelectorAll('.wmNode').forEach(b=>b.onclick=()=>select(b.dataset.id));
+  select(story&&!G.visited[story]&&WORLD[story]?story:here);
+  // scroll the map so "you are here" is visible on small screens
+  const hn=document.querySelector('.wmNode.here');if(hn)hn.scrollIntoView({block:'center',inline:'center'});};
+// ---------- Travel Boards inside every Respite Station ----------
+function drawBoard(c,x,y){c.fillStyle='#6b4426';c.fillRect(x+3,y+6,2,10);c.fillRect(x+11,y+6,2,10);c.fillStyle='#b5794a';c.fillRect(x+1,y-1,14,9);c.fillStyle='#8a5a32';c.fillRect(x+1,y+7,14,1);
+  c.fillStyle='#f6ecd2';c.fillRect(x+3,y+1,10,5);c.fillStyle='#7cc0ef';c.fillRect(x+8,y+3,5,3);c.fillStyle='#e2584f';c.fillRect(x+4,y+2,2,2);c.fillStyle='#5a9a4a';c.fillRect(x+6,y+4,2,1);}
+for(const k of Object.keys(MAPS)){const m=MAPS[k];if(!m.indoor||!/Respite Station/.test(m.name||'')||m._board)continue;m._board=1;
+  const w=m.warps&&m.warps[0];let spot=null;const occ=(x,y)=>m.npcs.some(n=>n.x===x&&n.y===y)||(m.warps||[]).some(q=>Math.abs(q.x-x)+Math.abs(q.y-y)<=1);
+  const walk=(x,y)=>y>=0&&y<m.h&&x>=0&&x<m.w&&!BLOCK.has(m.rows[y][x])&&!occ(x,y);
+  outer:for(let y=1;y<m.h-1;y++)for(const x of [m.w-2,1,m.w-3,2]){if(walk(x,y)&&!walk(x,y-1)&&!(m.doors&&m.doors[x+','+y])){spot=[x,y];break outer;}}if(!spot)continue;
+  m.npcs.push({id:'travelboard_'+k,x:spot[0],y:spot[1],dir:'down',name:'Travel Board',noRep:1,drawFn:drawBoard,talk:async()=>{await say('🪧 TRAVEL BOARD — Seagulp Express\n"Fly to any place you\'ve visited that has a Respite Station. Free for all tamers!"');
+    await new Promise(res=>{UI.townMap(()=>{UI.close();res();},{board:true});const ob=new MutationObserver(()=>{if(!document.querySelector('.wmPanel')){ob.disconnect();res();}});ob.observe($('#overlay'),{childList:true,subtree:true});});}});
+  delete GFX[k];}
+if(typeof GUIDE!=='undefined')GUIDE.push(['World','fasttravel','Map & fast travel','Open <b>🗺️ Map</b> from the menu to see Hollowvale. Tap any place to see how many of its rascals you\'ve caught, its levels, and whether it has a Respite Station.<br>🐦 <b>Seagulp Express:</b> fly to any place you\'ve visited that has a Respite Station (and back home to Burrowby). It unlocks from the map after your first badge — and every Respite Station has a <b>Travel Board</b> you can use any time. 🕸️ The Silkline lift also links Saltreach and Gale Bluffs.']);
 
 // ===================== PHONE & TABLET LAYOUT + AUTO GRAPHICS QUALITY =====================
 // Portrait phones: view on top, controls below. Landscape phones/tablets: full-screen view with overlaid controls.
