@@ -29,3 +29,11 @@ All six species in this batch have 96×96 transparent `<id>.png`, `<id>_side.png
 Each of the seven species has transparent 96×96 front, left-facing side, and rear PNGs. The game uses these images for front and back views and mirrors the side view for right-facing followers. Procedural artwork remains the fallback for species without replacement art, silhouettes and hue-shifted forms.
 
 **Progress: 31 of 103 species have three illustrated views.**
+
+## Batch 06: lantern insects
+
+- Glowbug → Lumimoth (Glimmer / Gust)
+
+Both species have hand-designed transparent 96×96 front, left-facing side, and back sprites, derived from a consistent six-view turnaround. The game continues using procedural fallbacks for all unillustrated species and color-shifted/silhouette variants.
+
+**Progress: 33 of 103 species have three illustrated views; 70 remain.**

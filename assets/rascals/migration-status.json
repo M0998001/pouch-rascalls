@@ -308,7 +308,11 @@
         "Glimmer"
       ],
       "evolvesTo": "lumimoth",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "lumimoth",
@@ -318,7 +322,11 @@
         "Gust"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "shadowisp",
