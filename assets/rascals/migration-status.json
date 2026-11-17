@@ -212,7 +212,11 @@
         "Plain"
       ],
       "evolvesTo": "galefinch",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "galefinch",
@@ -222,7 +226,11 @@
         "Plain"
       ],
       "evolvesTo": "tempestork",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "tempestork",
@@ -232,7 +240,11 @@
         "Spark"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "mushling",
@@ -242,7 +254,11 @@
         "Shade"
       ],
       "evolvesTo": "toadstoll",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "toadstoll",
@@ -252,7 +268,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "frostbun",
@@ -261,7 +281,11 @@
         "Frost"
       ],
       "evolvesTo": "glacihare",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "glacihare",
@@ -271,7 +295,11 @@
         "Glimmer"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "glowbug",
@@ -1111,5 +1139,6 @@
     "sparkmunk",
     "thundermunk"
   ],
-  "completedThreeViews": 24
+  "completedThreeViews": 24,
+  "latestBatch": "05"
 }

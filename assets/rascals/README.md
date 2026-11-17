@@ -19,3 +19,13 @@ The service worker precaches the artwork for offline use. See `migration-status.
 - Sparkmunk and Thundermunk — Spark creatures
 
 All six species in this batch have 96×96 transparent `<id>.png`, `<id>_side.png`, and `<id>_back.png` assets. The game continues to mirror the left-profile side view when traveling right and retains its procedural renderer for missing species, silhouettes, and color-shifted variants. Current completion: **24 of 103 species** with all three views.
+
+## Batch 05: three additional evolution families
+
+- Breezle → Galefinch → Tempestork (Gust, Plain, Spark)
+- Mushling → Toadstoll (Leaf / Shade)
+- Frostbun → Glacihare (Frost / Glimmer)
+
+Each of the seven species has transparent 96×96 front, left-facing side, and rear PNGs. The game uses these images for front and back views and mirrors the side view for right-facing followers. Procedural artwork remains the fallback for species without replacement art, silhouettes and hue-shifted forms.
+
+**Progress: 31 of 103 species have three illustrated views.**
