@@ -361,7 +361,11 @@
         "Plain"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "crabble",
@@ -398,7 +402,11 @@
         "Ember"
       ],
       "evolvesTo": "pyrohog",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "pyrohog",
@@ -408,7 +416,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "buzzlet",
@@ -418,7 +430,11 @@
         "Gust"
       ],
       "evolvesTo": "queenbloom",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "queenbloom",
@@ -428,7 +444,11 @@
         "Gust"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "starfawn",
@@ -437,7 +457,11 @@
         "Glimmer"
       ],
       "evolvesTo": "celestag",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "celestag",
@@ -447,7 +471,11 @@
         "Leaf"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "drakelet",
@@ -457,7 +485,11 @@
         "Gust"
       ],
       "evolvesTo": "wyvernal",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "wyvernal",
@@ -467,7 +499,11 @@
         "Gust"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "lilyhop",
@@ -517,7 +553,11 @@
         "Tide"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "thornbolt",

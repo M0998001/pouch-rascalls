@@ -46,3 +46,16 @@ Both species have hand-designed transparent 96×96 front, left-facing side, and 
 All four species now have 96×96 transparent front, left-profile side, and rear sprite images. Images are downscaled into the existing 48×48 game canvas, with mirrored right-side movement and original procedural fallback for non-migrated species, silhouettes, and color-shifted forms.
 
 **Progress: 37 of 103 species have three illustrated views; 66 remain.**
+
+## Batch 08: ten-species complete directional art
+
+- Snoozle (Plain)
+- Smoglet → Pyrohog (Ember / Stone)
+- Buzzlet → Queenbloom (Leaf / Gust)
+- Starfawn → Celestag (Glimmer / Leaf)
+- Drakelet → Wyvernal (Ember / Gust)
+- Steamwhelp (Ember / Tide hybrid)
+
+These 10 species each have three transparent 96×96 PNGs: `<id>.png` for front-facing, `<id>_side.png` facing left, and `<id>_back.png` from behind. The existing renderer downsamples sprite assets to 48×48 as needed, mirrors side sprites to face right, and retains procedural fallback for unreplaced species, silhouettes, and hue variants. The offline cache precaches all 30 additions.
+
+**Progress: 47 of 103 species completely illustrated, 56 remaining.**
