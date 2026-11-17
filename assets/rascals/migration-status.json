@@ -1174,7 +1174,11 @@
         "Stone"
       ],
       "evolvesTo": "ridgewyrm",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "ridgewyrm",
@@ -1184,7 +1188,11 @@
         "Gust"
       ],
       "evolvesTo": "highwyrm",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "highwyrm",
@@ -1194,7 +1202,11 @@
         "Gust"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "duskpup",
@@ -1230,7 +1242,11 @@
         "Glimmer"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "stellet",
@@ -1239,7 +1255,11 @@
         "Glimmer"
       ],
       "evolvesTo": "astraloom",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "astraloom",
@@ -1249,7 +1269,11 @@
         "Shade"
       ],
       "evolvesTo": "constellux",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "constellux",
@@ -1259,7 +1283,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "inklet",
@@ -1268,7 +1296,11 @@
         "Tide"
       ],
       "evolvesTo": "tendrill",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "tendrill",
@@ -1278,7 +1310,11 @@
         "Shade"
       ],
       "evolvesTo": "krakulon",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "krakulon",
@@ -1288,7 +1324,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "leviathra",

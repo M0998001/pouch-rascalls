@@ -114,3 +114,16 @@ Added 30 transparent 96×96 PNG files with front, left-facing side, and rear vie
 **Art production notes:** Prismite, Prismajest, Finnip, Koishine, and Snapjaw use newly generated illustration turnarounds. The three serpent evolutions use hand-constructed vector artwork and may benefit from another expressive polish pass; Aurorion and Solarion are custom recolored and embellished interpretations of existing Celestag and Wisplume sprites, respectively, and may also benefit from a fully bespoke redraw.
 
 **Progress: 87 of 103 species fully illustrated; 16 remain.**
+
+## Batch 13: mountain dragons, astral beings, and tentacled creatures
+
+- Scaleling → Ridgewyrm → Highwyrm (Stone / Gust)
+- Lunarfang (Shade / Glimmer)
+- Stellet → Astraloom → Constellux (Glimmer / Shade)
+- Inklet → Tendrill → Krakulon (Tide / Shade)
+
+All ten creatures received three 96×96 transparent PNG sprite views: `<id>.png` (front), `<id>_side.png` (left profile), and `<id>_back.png` (rear). They are integrated into the existing 48×48 canvas-based renderer, with rightward mirroring, color/shape variant fallback, and service-worker offline precaching.
+
+**Artwork notes:** The rocky dragon family, Lunarfang, and Stellet were extracted from a newly generated full-turnaround design sheet. Astraloom and Constellux are bespoke palette/geometry variations evolved from Stellet, featuring starfield cloaks and celestial details. Inklet, Tendrill, and Krakulon are recolored and substantially reworked illustrated aquatic forms with additional tentacles, jewel crests, and stage-specific silhouettes. The adapted evolutionary designs may benefit from a future character-specific polish pass.
+
+**Progress: 97 of 103 species have three illustrated views; 6 remain.**
