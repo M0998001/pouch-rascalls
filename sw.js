@@ -1,6 +1,6 @@
 // Pouch Rascalls service worker: play offline, but always prefer the newest version when online.
-const CACHE='rascalls-v2';
-const CORE=['./','./index.html','./manifest.webmanifest','./icons/apple-touch-icon.png','./icons/icon-192.png','./icons/icon-512.png','./icons/favicon-32.png'];
+const CACHE='rascalls-v3-starter-art';
+const CORE=['./assets/starter-sprites/sprigling.png','./assets/starter-sprites/emberkit.png','./assets/starter-sprites/puddlepip.png','./assets/starter-sprites/zippup.png','./assets/starter-sprites/snowcub.png','./assets/starter-sprites/glintling.png','./','./index.html','./manifest.webmanifest','./icons/apple-touch-icon.png','./icons/icon-192.png','./icons/icon-512.png','./icons/favicon-32.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET'||new URL(r.url).origin!==location.origin)return;

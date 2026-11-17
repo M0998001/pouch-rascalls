@@ -8197,6 +8197,69 @@ const _titleIOS=UI.title;UI.title=function(){_titleIOS.call(this);if(!IS_IOS||IS
   const wrap=document.querySelector('.titleP .title');if(!wrap)return;const tip=document.createElement('div');tip.className='a2hs';
   tip.innerHTML=`<b>📲 Play full-screen!</b> Tap <span class="shareIco">⬆︎</span> <b>Share</b>, then <b>Add to Home Screen</b>. Your saves stay safer there, too.<button aria-label="Dismiss">✕</button>`;
   tip.querySelector('button').onclick=()=>{try{localStorage.setItem('pr_a2hs','1');}catch(e){}tip.remove();};wrap.appendChild(tip);};
+
+// ===== Pouch Rascalls: hand-designed starter creature art =====
+// The original procedural renderer remains the fallback for every species,
+// for palette-shifted variants, and for back/side/silhouette sprite views.
+const RASCAL_STARTER_PNG = Object.freeze({
+  sprigling: 'assets/starter-sprites/sprigling.png',
+  emberkit:  'assets/starter-sprites/emberkit.png',
+  puddlepip: 'assets/starter-sprites/puddlepip.png',
+  zippup:    'assets/starter-sprites/zippup.png',
+  snowcub:   'assets/starter-sprites/snowcub.png',
+  glintling: 'assets/starter-sprites/glintling.png'
+});
+const _rascalOriginalMonsterSprite = monsterSprite;
+const _rascalOriginalSpriteURL = spriteURL;
+const _rascalStarterImages = Object.create(null);
+const _rascalStarterCanvases = Object.create(null);
+function rascalUsesCustomFront(id, hue, opts) {
+  return Object.prototype.hasOwnProperty.call(RASCAL_STARTER_PNG,id) &&
+    !(hue || 0) && !(opts && (opts.back || opts.side || opts.sil));
+}
+function rascalStarterImage(id) {
+  if (_rascalStarterImages[id]) return _rascalStarterImages[id];
+  const img = new Image();
+  img.decoding = 'async';
+  img.onload = () => {
+    // The fallback renderer may have been called before the PNG finished loading.
+    // Only invalidate the old front-facing cache entry; leave all other views alone.
+    delete spriteCache[id+'|0|0|0'];
+    delete spriteCache['u|'+id+'|0|0'];
+    delete _rascalStarterCanvases[id];
+  };
+  img.onerror = () => console.warn('Could not load starter sprite:', id);
+  img.src = RASCAL_STARTER_PNG[id];
+  _rascalStarterImages[id] = img;
+  return img;
+}
+monsterSprite = function(speciesId,hue,opts) {
+  if (rascalUsesCustomFront(speciesId,hue,opts)) {
+    const image = rascalStarterImage(speciesId);
+    if (image.complete && image.naturalWidth) {
+      if (!_rascalStarterCanvases[speciesId]) {
+        const canvas = document.createElement('canvas');
+        canvas.width = canvas.height = 48; // required by existing texture atlases
+        const ctx = canvas.getContext('2d');
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+        ctx.drawImage(image,0,0,48,48);
+        _rascalStarterCanvases[speciesId] = canvas;
+      }
+      return _rascalStarterCanvases[speciesId];
+    }
+  }
+  return _rascalOriginalMonsterSprite(speciesId,hue,opts);
+};
+spriteURL = function(speciesId,hue,opts) {
+  // UI <img> elements can load the crisp 96px portraits directly.
+  if (rascalUsesCustomFront(speciesId,hue,opts)) return RASCAL_STARTER_PNG[speciesId];
+  return _rascalOriginalSpriteURL(speciesId,hue,opts);
+};
+// Load them as early as possible so battle/overworld canvas sprites switch
+// from their procedural fallback to the custom fronts without a page refresh.
+Object.keys(RASCAL_STARTER_PNG).forEach(rascalStarterImage);
+// ===== End starter creature art =====
 </script>
 <script>
 document.getElementById('dialog').addEventListener('click',()=>{if(Dialog.active&&!Dialog.choices)Dialog.press('a');else if(Dialog.typing)Dialog.finishType();});
