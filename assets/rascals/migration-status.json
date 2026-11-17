@@ -132,7 +132,11 @@
         "Plain"
       ],
       "evolvesTo": "fluffern",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "fluffern",
@@ -142,7 +146,11 @@
         "Glimmer"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "pebblet",
@@ -151,7 +159,11 @@
         "Stone"
       ],
       "evolvesTo": "boulderoo",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "boulderoo",
@@ -160,7 +172,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "sparkmunk",
@@ -169,7 +185,11 @@
         "Spark"
       ],
       "evolvesTo": "thundermunk",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "thundermunk",
@@ -178,7 +198,11 @@
         "Spark"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "breezle",
@@ -1077,5 +1101,15 @@
   ],
   "completedThreeViewSpecies": 18,
   "remainingWithoutFront": 85,
-  "notes": "Starter evolution families have 18 species with front, side and back art; other species retain procedural sprites until future batches."
+  "notes": "Starter evolution families have 18 species with front, side and back art; other species retain procedural sprites until future batches.",
+  "lastCompletedBatch": "04",
+  "lastCompletedSpecies": [
+    "fluffin",
+    "fluffern",
+    "pebblet",
+    "boulderoo",
+    "sparkmunk",
+    "thundermunk"
+  ],
+  "completedThreeViews": 24
 }

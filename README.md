@@ -12,3 +12,7 @@ A cozy-fantasy monster-taming RPG that runs entirely in your browser — catch, 
 
 ### On iPhone or iPad
 Open the link in Safari, tap **Share → Add to Home Screen**. It then launches full-screen like an app, works offline, and Safari won't clear your saves.
+
+## Artwork migration status
+
+Art migration: 24 of 103 species now have front, side, and back PNGs. See `assets/rascals/migration-status.json` for the full per-species checklist.
