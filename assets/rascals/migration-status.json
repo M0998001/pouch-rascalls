@@ -861,7 +861,11 @@
         "Frost"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "flarefly",
@@ -927,7 +931,11 @@
         "Stone"
       ],
       "evolvesTo": "prismajest",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "prismajest",
@@ -937,7 +945,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "finnip",
@@ -946,7 +958,11 @@
         "Tide"
       ],
       "evolvesTo": "koishine",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "koishine",
@@ -956,7 +972,11 @@
         "Glimmer"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "snapjaw",
@@ -966,7 +986,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "solarion",
@@ -976,7 +1000,11 @@
         "Glimmer"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "zippup",
@@ -1105,7 +1133,11 @@
         "Leaf"
       ],
       "evolvesTo": "vipervine",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "vipervine",
@@ -1115,7 +1147,11 @@
         "Shade"
       ],
       "evolvesTo": "briarconda",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "briarconda",
@@ -1125,7 +1161,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "scaleling",

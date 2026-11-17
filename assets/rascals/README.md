@@ -99,3 +99,18 @@ Added 30 transparent 96×96 front, left-facing side, and rear PNG sprites. The n
 **Art provenance:** The Yetot, Yetitan, Wisplume, Aurorowl, and Nightkit images were extracted and cleaned from newly generated turnarounds. The remaining five creatures were developed as recolored and embellished interpretations of existing illustrated families to keep visual consistency; they may benefit from future bespoke redraws.
 
 **Progress: 77 / 103 species completely illustrated; 26 remain.**
+  
+## Batch 12: Prismatic, ocean, woodland and legendary Rascals
+
+- Prismite → Prismajest (Glimmer / Stone)
+- Finnip → Koishine (Tide / Glimmer)
+- Snapjaw (Tide / Stone)
+- Slithersprout → Vipervine → Briarconda (Leaf / Shade)
+- Aurorion (Glimmer / Frost legendary)
+- Solarion (Ember / Glimmer legendary)
+
+Added 30 transparent 96×96 PNG files with front, left-facing side, and rear views. Sprite maps and service-worker precaching include all views, with the established procedural fallback kept for remaining species, alternate hues, and silhouettes.
+
+**Art production notes:** Prismite, Prismajest, Finnip, Koishine, and Snapjaw use newly generated illustration turnarounds. The three serpent evolutions use hand-constructed vector artwork and may benefit from another expressive polish pass; Aurorion and Solarion are custom recolored and embellished interpretations of existing Celestag and Wisplume sprites, respectively, and may also benefit from a fully bespoke redraw.
+
+**Progress: 87 of 103 species fully illustrated; 16 remain.**
