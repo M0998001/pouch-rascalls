@@ -72,3 +72,16 @@ These 10 species each have three transparent 96×96 PNGs: `<id>.png` for front-f
 Each of these ten species now has 96×96 transparent front, left-profile side, and rear PNG artwork in `assets/rascals/`. The original procedural renderer remains a fallback for all remaining species, alternate-hue forms and silhouettes. The existing follower renderer mirrors left-facing profiles to show right-facing views. The offline service worker precaches all 30 added PNGs.
 
 **Progress: 57 of 103 species have all three illustrated views; 46 remain.**
+
+## Batch 10: aurora, storm birds, lightning beetles, magma moles, fire bats and frost penguins
+
+- Aurorabun (Frost / Glimmer hybrid)
+- Galeon (Gust / Tide; evolves from Seagulp)
+- Boltbug → Voltbeetle (Spark / Stone)
+- Magmole → Magmaul (Ember / Stone)
+- Cinderbat → Pyrobat (Ember / Shade)
+- Pengling → Emperguin (Frost / Tide)
+
+These 10 species have complete custom transparent 96×96 front, left-facing side and back PNG sprite sets under `assets/rascals/`. The canvas renderer uses the new PNGs for normal appearances, mirrors side sprites for rightward facing, and retains procedural artwork for species without illustrations, silhouettes and alternative hues. All 30 new images are pre-cached for offline play.
+
+**Progress: 67 of 103 species completely illustrated, 36 remaining.**

@@ -597,7 +597,11 @@
         "Glimmer"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "bubblub",
@@ -648,7 +652,11 @@
         "Tide"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "boltbug",
@@ -658,7 +666,11 @@
         "Stone"
       ],
       "evolvesTo": "voltbeetle",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "voltbeetle",
@@ -668,7 +680,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "magmole",
@@ -678,7 +694,11 @@
         "Stone"
       ],
       "evolvesTo": "magmaul",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "magmaul",
@@ -688,7 +708,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "cinderbat",
@@ -698,7 +722,11 @@
         "Shade"
       ],
       "evolvesTo": "pyrobat",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "pyrobat",
@@ -708,7 +736,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "pengling",
@@ -718,7 +750,11 @@
         "Tide"
       ],
       "evolvesTo": "emperguin",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "emperguin",
@@ -728,7 +764,11 @@
         "Tide"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "yetot",
