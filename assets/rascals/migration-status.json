@@ -1,0 +1,1042 @@
+{
+  "schema": 1,
+  "source": "index.html",
+  "totalSpecies": 103,
+  "starterFullyIllustrated": 6,
+  "firstEvolutionFrontIllustrated": 6,
+  "species": [
+    {
+      "id": "sprigling",
+      "name": "Sprigling",
+      "types": [
+        "Leaf"
+      ],
+      "evolvesTo": "thornpup",
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
+    },
+    {
+      "id": "thornpup",
+      "name": "Thornpup",
+      "types": [
+        "Leaf"
+      ],
+      "evolvesTo": "bramblehound",
+      "illustratedViews": [
+        "front"
+      ]
+    },
+    {
+      "id": "bramblehound",
+      "name": "Bramblehound",
+      "types": [
+        "Leaf",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "emberkit",
+      "name": "Emberkit",
+      "types": [
+        "Ember"
+      ],
+      "evolvesTo": "cindercat",
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
+    },
+    {
+      "id": "cindercat",
+      "name": "Cindercat",
+      "types": [
+        "Ember"
+      ],
+      "evolvesTo": "blazelynx",
+      "illustratedViews": [
+        "front"
+      ]
+    },
+    {
+      "id": "blazelynx",
+      "name": "Blazelynx",
+      "types": [
+        "Ember",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "puddlepip",
+      "name": "Puddlepip",
+      "types": [
+        "Tide"
+      ],
+      "evolvesTo": "brookfin",
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
+    },
+    {
+      "id": "brookfin",
+      "name": "Brookfin",
+      "types": [
+        "Tide"
+      ],
+      "evolvesTo": "tidalotl",
+      "illustratedViews": [
+        "front"
+      ]
+    },
+    {
+      "id": "tidalotl",
+      "name": "Tidalotl",
+      "types": [
+        "Tide",
+        "Glimmer"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "fluffin",
+      "name": "Fluffin",
+      "types": [
+        "Plain"
+      ],
+      "evolvesTo": "fluffern",
+      "illustratedViews": []
+    },
+    {
+      "id": "fluffern",
+      "name": "Fluffern",
+      "types": [
+        "Plain",
+        "Glimmer"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "pebblet",
+      "name": "Pebblet",
+      "types": [
+        "Stone"
+      ],
+      "evolvesTo": "boulderoo",
+      "illustratedViews": []
+    },
+    {
+      "id": "boulderoo",
+      "name": "Boulderoo",
+      "types": [
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "sparkmunk",
+      "name": "Sparkmunk",
+      "types": [
+        "Spark"
+      ],
+      "evolvesTo": "thundermunk",
+      "illustratedViews": []
+    },
+    {
+      "id": "thundermunk",
+      "name": "Thundermunk",
+      "types": [
+        "Spark"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "breezle",
+      "name": "Breezle",
+      "types": [
+        "Gust",
+        "Plain"
+      ],
+      "evolvesTo": "galefinch",
+      "illustratedViews": []
+    },
+    {
+      "id": "galefinch",
+      "name": "Galefinch",
+      "types": [
+        "Gust",
+        "Plain"
+      ],
+      "evolvesTo": "tempestork",
+      "illustratedViews": []
+    },
+    {
+      "id": "tempestork",
+      "name": "Tempestork",
+      "types": [
+        "Gust",
+        "Spark"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "mushling",
+      "name": "Mushling",
+      "types": [
+        "Leaf",
+        "Shade"
+      ],
+      "evolvesTo": "toadstoll",
+      "illustratedViews": []
+    },
+    {
+      "id": "toadstoll",
+      "name": "Toadstoll",
+      "types": [
+        "Leaf",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "frostbun",
+      "name": "Frostbun",
+      "types": [
+        "Frost"
+      ],
+      "evolvesTo": "glacihare",
+      "illustratedViews": []
+    },
+    {
+      "id": "glacihare",
+      "name": "Glacihare",
+      "types": [
+        "Frost",
+        "Glimmer"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "glowbug",
+      "name": "Glowbug",
+      "types": [
+        "Glimmer"
+      ],
+      "evolvesTo": "lumimoth",
+      "illustratedViews": []
+    },
+    {
+      "id": "lumimoth",
+      "name": "Lumimoth",
+      "types": [
+        "Glimmer",
+        "Gust"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "shadowisp",
+      "name": "Shadowisp",
+      "types": [
+        "Shade"
+      ],
+      "evolvesTo": "gloomwraith",
+      "illustratedViews": []
+    },
+    {
+      "id": "gloomwraith",
+      "name": "Gloomwraith",
+      "types": [
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "snoozle",
+      "name": "Snoozle",
+      "types": [
+        "Plain"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "crabble",
+      "name": "Crabble",
+      "types": [
+        "Tide",
+        "Stone"
+      ],
+      "evolvesTo": "krabastion",
+      "illustratedViews": []
+    },
+    {
+      "id": "krabastion",
+      "name": "Krabastion",
+      "types": [
+        "Tide",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "smoglet",
+      "name": "Smoglet",
+      "types": [
+        "Ember"
+      ],
+      "evolvesTo": "pyrohog",
+      "illustratedViews": []
+    },
+    {
+      "id": "pyrohog",
+      "name": "Pyrohog",
+      "types": [
+        "Ember",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "buzzlet",
+      "name": "Buzzlet",
+      "types": [
+        "Leaf",
+        "Gust"
+      ],
+      "evolvesTo": "queenbloom",
+      "illustratedViews": []
+    },
+    {
+      "id": "queenbloom",
+      "name": "Queenbloom",
+      "types": [
+        "Leaf",
+        "Gust"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "starfawn",
+      "name": "Starfawn",
+      "types": [
+        "Glimmer"
+      ],
+      "evolvesTo": "celestag",
+      "illustratedViews": []
+    },
+    {
+      "id": "celestag",
+      "name": "Celestag",
+      "types": [
+        "Glimmer",
+        "Leaf"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "drakelet",
+      "name": "Drakelet",
+      "types": [
+        "Ember",
+        "Gust"
+      ],
+      "evolvesTo": "wyvernal",
+      "illustratedViews": []
+    },
+    {
+      "id": "wyvernal",
+      "name": "Wyvernal",
+      "types": [
+        "Ember",
+        "Gust"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "lilyhop",
+      "name": "Lilyhop",
+      "types": [
+        "Tide",
+        "Leaf"
+      ],
+      "evolvesTo": "lotusking",
+      "illustratedViews": []
+    },
+    {
+      "id": "lotusking",
+      "name": "Lotusking",
+      "types": [
+        "Tide",
+        "Leaf"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "masklet",
+      "name": "Masklet",
+      "types": [
+        "Shade",
+        "Plain"
+      ],
+      "evolvesTo": "banditail",
+      "illustratedViews": []
+    },
+    {
+      "id": "banditail",
+      "name": "Banditail",
+      "types": [
+        "Shade",
+        "Plain"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "steamwhelp",
+      "name": "Steamwhelp",
+      "types": [
+        "Ember",
+        "Tide"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "thornbolt",
+      "name": "Thornbolt",
+      "types": [
+        "Leaf",
+        "Spark"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "aurorabun",
+      "name": "Aurorabun",
+      "types": [
+        "Frost",
+        "Glimmer"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "bubblub",
+      "name": "Bubblub",
+      "types": [
+        "Tide"
+      ],
+      "evolvesTo": "jellumi",
+      "illustratedViews": []
+    },
+    {
+      "id": "jellumi",
+      "name": "Jellumi",
+      "types": [
+        "Tide",
+        "Glimmer"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "seagulp",
+      "name": "Seagulp",
+      "types": [
+        "Gust",
+        "Tide"
+      ],
+      "evolvesTo": "galeon",
+      "illustratedViews": []
+    },
+    {
+      "id": "galeon",
+      "name": "Galeon",
+      "types": [
+        "Gust",
+        "Tide"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "boltbug",
+      "name": "Boltbug",
+      "types": [
+        "Spark",
+        "Stone"
+      ],
+      "evolvesTo": "voltbeetle",
+      "illustratedViews": []
+    },
+    {
+      "id": "voltbeetle",
+      "name": "Voltbeetle",
+      "types": [
+        "Spark",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "magmole",
+      "name": "Magmole",
+      "types": [
+        "Ember",
+        "Stone"
+      ],
+      "evolvesTo": "magmaul",
+      "illustratedViews": []
+    },
+    {
+      "id": "magmaul",
+      "name": "Magmaul",
+      "types": [
+        "Ember",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "cinderbat",
+      "name": "Cinderbat",
+      "types": [
+        "Ember",
+        "Shade"
+      ],
+      "evolvesTo": "pyrobat",
+      "illustratedViews": []
+    },
+    {
+      "id": "pyrobat",
+      "name": "Pyrobat",
+      "types": [
+        "Ember",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "pengling",
+      "name": "Pengling",
+      "types": [
+        "Frost",
+        "Tide"
+      ],
+      "evolvesTo": "emperguin",
+      "illustratedViews": []
+    },
+    {
+      "id": "emperguin",
+      "name": "Emperguin",
+      "types": [
+        "Frost",
+        "Tide"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "yetot",
+      "name": "Yetot",
+      "types": [
+        "Frost",
+        "Plain"
+      ],
+      "evolvesTo": "yetitan",
+      "illustratedViews": []
+    },
+    {
+      "id": "yetitan",
+      "name": "Yetitan",
+      "types": [
+        "Frost",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "wisplume",
+      "name": "Wisplume",
+      "types": [
+        "Glimmer",
+        "Gust"
+      ],
+      "evolvesTo": "aurorowl",
+      "illustratedViews": []
+    },
+    {
+      "id": "aurorowl",
+      "name": "Aurorowl",
+      "types": [
+        "Glimmer",
+        "Gust"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "nightkit",
+      "name": "Nightkit",
+      "types": [
+        "Shade"
+      ],
+      "evolvesTo": "umbrafox",
+      "illustratedViews": []
+    },
+    {
+      "id": "umbrafox",
+      "name": "Umbrafox",
+      "types": [
+        "Shade",
+        "Frost"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "aurorion",
+      "name": "Aurorion",
+      "types": [
+        "Glimmer",
+        "Frost"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "flarefly",
+      "name": "Flarefly",
+      "types": [
+        "Ember",
+        "Gust"
+      ],
+      "evolvesTo": "blazewing",
+      "illustratedViews": []
+    },
+    {
+      "id": "blazewing",
+      "name": "Blazewing",
+      "types": [
+        "Ember",
+        "Gust"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "hexkit",
+      "name": "Hexkit",
+      "types": [
+        "Shade",
+        "Glimmer"
+      ],
+      "evolvesTo": "hexmyst",
+      "illustratedViews": []
+    },
+    {
+      "id": "hexmyst",
+      "name": "Hexmyst",
+      "types": [
+        "Shade",
+        "Glimmer"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "prismite",
+      "name": "Prismite",
+      "types": [
+        "Glimmer",
+        "Stone"
+      ],
+      "evolvesTo": "prismajest",
+      "illustratedViews": []
+    },
+    {
+      "id": "prismajest",
+      "name": "Prismajest",
+      "types": [
+        "Glimmer",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "finnip",
+      "name": "Finnip",
+      "types": [
+        "Tide"
+      ],
+      "evolvesTo": "koishine",
+      "illustratedViews": []
+    },
+    {
+      "id": "koishine",
+      "name": "Koishine",
+      "types": [
+        "Tide",
+        "Glimmer"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "snapjaw",
+      "name": "Snapjaw",
+      "types": [
+        "Tide",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "solarion",
+      "name": "Solarion",
+      "types": [
+        "Ember",
+        "Glimmer"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "zippup",
+      "name": "Zippup",
+      "types": [
+        "Spark"
+      ],
+      "evolvesTo": "joltwolf",
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
+    },
+    {
+      "id": "joltwolf",
+      "name": "Joltwolf",
+      "types": [
+        "Spark"
+      ],
+      "evolvesTo": "stormfang",
+      "illustratedViews": [
+        "front"
+      ]
+    },
+    {
+      "id": "stormfang",
+      "name": "Stormfang",
+      "types": [
+        "Spark",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "snowcub",
+      "name": "Snowcub",
+      "types": [
+        "Frost"
+      ],
+      "evolvesTo": "frostbear",
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
+    },
+    {
+      "id": "frostbear",
+      "name": "Frostbear",
+      "types": [
+        "Frost"
+      ],
+      "evolvesTo": "glaciursa",
+      "illustratedViews": [
+        "front"
+      ]
+    },
+    {
+      "id": "glaciursa",
+      "name": "Glaciursa",
+      "types": [
+        "Frost",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "glintling",
+      "name": "Glintling",
+      "types": [
+        "Glimmer"
+      ],
+      "evolvesTo": "shimmerwing",
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
+    },
+    {
+      "id": "shimmerwing",
+      "name": "Shimmerwing",
+      "types": [
+        "Glimmer"
+      ],
+      "evolvesTo": "celestrix",
+      "illustratedViews": [
+        "front"
+      ]
+    },
+    {
+      "id": "celestrix",
+      "name": "Celestrix",
+      "types": [
+        "Glimmer",
+        "Gust"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "slithersprout",
+      "name": "Slithersprout",
+      "types": [
+        "Leaf"
+      ],
+      "evolvesTo": "vipervine",
+      "illustratedViews": []
+    },
+    {
+      "id": "vipervine",
+      "name": "Vipervine",
+      "types": [
+        "Leaf",
+        "Shade"
+      ],
+      "evolvesTo": "briarconda",
+      "illustratedViews": []
+    },
+    {
+      "id": "briarconda",
+      "name": "Briarconda",
+      "types": [
+        "Leaf",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "scaleling",
+      "name": "Scaleling",
+      "types": [
+        "Stone"
+      ],
+      "evolvesTo": "ridgewyrm",
+      "illustratedViews": []
+    },
+    {
+      "id": "ridgewyrm",
+      "name": "Ridgewyrm",
+      "types": [
+        "Stone",
+        "Gust"
+      ],
+      "evolvesTo": "highwyrm",
+      "illustratedViews": []
+    },
+    {
+      "id": "highwyrm",
+      "name": "Highwyrm",
+      "types": [
+        "Stone",
+        "Gust"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "duskpup",
+      "name": "Duskpup",
+      "types": [
+        "Shade"
+      ],
+      "evolvesTo": "gloamwolf",
+      "illustratedViews": []
+    },
+    {
+      "id": "gloamwolf",
+      "name": "Gloamwolf",
+      "types": [
+        "Shade"
+      ],
+      "evolvesTo": "lunarfang",
+      "illustratedViews": []
+    },
+    {
+      "id": "lunarfang",
+      "name": "Lunarfang",
+      "types": [
+        "Shade",
+        "Glimmer"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "stellet",
+      "name": "Stellet",
+      "types": [
+        "Glimmer"
+      ],
+      "evolvesTo": "astraloom",
+      "illustratedViews": []
+    },
+    {
+      "id": "astraloom",
+      "name": "Astraloom",
+      "types": [
+        "Glimmer",
+        "Shade"
+      ],
+      "evolvesTo": "constellux",
+      "illustratedViews": []
+    },
+    {
+      "id": "constellux",
+      "name": "Constellux",
+      "types": [
+        "Glimmer",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "inklet",
+      "name": "Inklet",
+      "types": [
+        "Tide"
+      ],
+      "evolvesTo": "tendrill",
+      "illustratedViews": []
+    },
+    {
+      "id": "tendrill",
+      "name": "Tendrill",
+      "types": [
+        "Tide",
+        "Shade"
+      ],
+      "evolvesTo": "krakulon",
+      "illustratedViews": []
+    },
+    {
+      "id": "krakulon",
+      "name": "Krakulon",
+      "types": [
+        "Tide",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "leviathra",
+      "name": "Leviathra",
+      "types": [
+        "Tide",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "astraeon",
+      "name": "Astraeon",
+      "types": [
+        "Glimmer",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "ignivorn",
+      "name": "Ignivorn",
+      "types": [
+        "Ember",
+        "Stone"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "galefenrir",
+      "name": "Galefenrir",
+      "types": [
+        "Gust",
+        "Shade"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "nightjack",
+      "name": "Nightjack",
+      "types": [
+        "Shade",
+        "Gust"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    },
+    {
+      "id": "valorhound",
+      "name": "Valorhound",
+      "types": [
+        "Glimmer",
+        "Plain"
+      ],
+      "evolvesTo": null,
+      "illustratedViews": []
+    }
+  ]
+}

@@ -8207,17 +8207,23 @@ const RASCAL_STARTER_PNG = Object.freeze({
   puddlepip: {front:'assets/starter-sprites/puddlepip.png', side:'assets/starter-sprites/puddlepip_side.png', back:'assets/starter-sprites/puddlepip_back.png'},
   zippup:    {front:'assets/starter-sprites/zippup.png',    side:'assets/starter-sprites/zippup_side.png',    back:'assets/starter-sprites/zippup_back.png'},
   snowcub:   {front:'assets/starter-sprites/snowcub.png',   side:'assets/starter-sprites/snowcub_side.png',   back:'assets/starter-sprites/snowcub_back.png'},
-  glintling: {front:'assets/starter-sprites/glintling.png', side:'assets/starter-sprites/glintling_side.png', back:'assets/starter-sprites/glintling_back.png'}
+  glintling: {front:'assets/starter-sprites/glintling.png', side:'assets/starter-sprites/glintling_side.png', back:'assets/starter-sprites/glintling_back.png'},
+  thornpup: {front:'assets/rascals/thornpup.png'},
+  cindercat: {front:'assets/rascals/cindercat.png'},
+  brookfin: {front:'assets/rascals/brookfin.png'},
+  joltwolf: {front:'assets/rascals/joltwolf.png'},
+  frostbear: {front:'assets/rascals/frostbear.png'},
+  shimmerwing: {front:'assets/rascals/shimmerwing.png'}
 });
 const _rascalOriginalMonsterSprite = monsterSprite;
 const _rascalOriginalSpriteURL = spriteURL;
 const _rascalStarterImages = Object.create(null);
 const _rascalStarterCanvases = Object.create(null);
 function rascalCustomView(id, hue, opts) {
-  if (!Object.prototype.hasOwnProperty.call(RASCAL_STARTER_PNG,id) || (hue || 0) || (opts && opts.sil)) return null;
-  if (opts && opts.back) return 'back';
-  if (opts && opts.side) return 'side';
-  return 'front';
+  const artwork=RASCAL_STARTER_PNG[id];
+  if (!artwork || (hue || 0) || (opts && opts.sil)) return null;
+  const view=(opts && opts.back)?'back':(opts && opts.side)?'side':'front';
+  return artwork[view]?view:null;
 }
 function rascalStarterImage(id,view) {
   const key=id+'|'+view;
@@ -8265,7 +8271,7 @@ spriteURL=function(speciesId,hue,opts) {
 // Preload all three orientations. Rightward followers are mirrored by
 // the game's existing follower renderer; the side PNG faces left.
 for(const id of Object.keys(RASCAL_STARTER_PNG))
-  for(const view of ['front','side','back']) rascalStarterImage(id,view);
+  for(const view of Object.keys(RASCAL_STARTER_PNG[id])) rascalStarterImage(id,view);
 // ===== End illustrated starter art =====
 </script>
 <script>
