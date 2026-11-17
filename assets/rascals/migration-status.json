@@ -778,7 +778,11 @@
         "Plain"
       ],
       "evolvesTo": "yetitan",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "yetitan",
@@ -788,7 +792,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "wisplume",
@@ -798,7 +806,11 @@
         "Gust"
       ],
       "evolvesTo": "aurorowl",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "aurorowl",
@@ -808,7 +820,11 @@
         "Gust"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "nightkit",
@@ -817,7 +833,11 @@
         "Shade"
       ],
       "evolvesTo": "umbrafox",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "umbrafox",
@@ -827,7 +847,11 @@
         "Frost"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "aurorion",
@@ -847,7 +871,11 @@
         "Gust"
       ],
       "evolvesTo": "blazewing",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "blazewing",
@@ -857,7 +885,11 @@
         "Gust"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "hexkit",
@@ -867,7 +899,11 @@
         "Glimmer"
       ],
       "evolvesTo": "hexmyst",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "hexmyst",
@@ -877,7 +913,11 @@
         "Glimmer"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "prismite",

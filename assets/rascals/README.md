@@ -85,3 +85,17 @@ Each of these ten species now has 96×96 transparent front, left-profile side, a
 These 10 species have complete custom transparent 96×96 front, left-facing side and back PNG sprite sets under `assets/rascals/`. The canvas renderer uses the new PNGs for normal appearances, mirrors side sprites for rightward facing, and retains procedural artwork for species without illustrations, silhouettes and alternative hues. All 30 new images are pre-cached for offline play.
 
 **Progress: 67 of 103 species completely illustrated, 36 remaining.**
+
+## Batch 11: mountain snow, aurora birds, shadow foxes, ember insects, and spellcats
+
+- Yetot → Yetitan (Frost / Plain and Frost / Stone)
+- Wisplume → Aurorowl (Glimmer / Gust)
+- Nightkit → Umbrafox (Shade and Shade / Frost)
+- Flarefly → Blazewing (Ember / Gust)
+- Hexkit → Hexmyst (Shade / Glimmer)
+
+Added 30 transparent 96×96 front, left-facing side, and rear PNG sprites. The native renderer retains 48×48 canvas output, mirrored right-facing profiles, procedural fallback for unmigrated species, silhouettes, and hue-shifted forms. The service worker precaches all new images for offline play.
+
+**Art provenance:** The Yetot, Yetitan, Wisplume, Aurorowl, and Nightkit images were extracted and cleaned from newly generated turnarounds. The remaining five creatures were developed as recolored and embellished interpretations of existing illustrated families to keep visual consistency; they may benefit from future bespoke redraws.
+
+**Progress: 77 / 103 species completely illustrated; 26 remain.**
