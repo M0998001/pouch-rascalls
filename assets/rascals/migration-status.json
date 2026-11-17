@@ -26,7 +26,9 @@
       ],
       "evolvesTo": "bramblehound",
       "illustratedViews": [
-        "front"
+        "front",
+        "side",
+        "back"
       ]
     },
     {
@@ -37,7 +39,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "emberkit",
@@ -60,7 +66,9 @@
       ],
       "evolvesTo": "blazelynx",
       "illustratedViews": [
-        "front"
+        "front",
+        "side",
+        "back"
       ]
     },
     {
@@ -71,7 +79,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "puddlepip",
@@ -94,7 +106,9 @@
       ],
       "evolvesTo": "tidalotl",
       "illustratedViews": [
-        "front"
+        "front",
+        "side",
+        "back"
       ]
     },
     {
@@ -105,7 +119,11 @@
         "Glimmer"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "fluffin",
@@ -753,7 +771,9 @@
       ],
       "evolvesTo": "stormfang",
       "illustratedViews": [
-        "front"
+        "front",
+        "side",
+        "back"
       ]
     },
     {
@@ -764,7 +784,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "snowcub",
@@ -787,7 +811,9 @@
       ],
       "evolvesTo": "glaciursa",
       "illustratedViews": [
-        "front"
+        "front",
+        "side",
+        "back"
       ]
     },
     {
@@ -798,7 +824,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "glintling",
@@ -821,7 +851,9 @@
       ],
       "evolvesTo": "celestrix",
       "illustratedViews": [
-        "front"
+        "front",
+        "side",
+        "back"
       ]
     },
     {
@@ -832,7 +864,11 @@
         "Gust"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "slithersprout",
@@ -1038,5 +1074,8 @@
       "evolvesTo": null,
       "illustratedViews": []
     }
-  ]
+  ],
+  "completedThreeViewSpecies": 18,
+  "remainingWithoutFront": 85,
+  "notes": "Starter evolution families have 18 species with front, side and back art; other species retain procedural sprites until future batches."
 }

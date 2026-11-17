@@ -8,7 +8,7 @@ A cozy-fantasy monster-taming RPG that runs entirely in your browser — catch, 
 
 - Works on phone, tablet and desktop (touch controls or keyboard: arrows/WASD, Z to confirm, X for menu)
 - Saves in your browser; use *Save Code* in the menu to move a save between devices
-- Most art, music, and the 2.5D view are generated in code; the six starter creatures have hand-designed front, side and back PNG views, with custom front portraits for their first evolutions in `assets/starter-sprites/`
+- Most art, music, and the 2.5D view are generated in code; the all 18 species in the six starter evolution families have hand-designed front, side and back PNG sprite views in `assets/starter-sprites/`
 
 ### On iPhone or iPad
 Open the link in Safari, tap **Share → Add to Home Screen**. It then launches full-screen like an app, works offline, and Safari won't clear your saves.

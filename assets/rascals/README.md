@@ -1,9 +1,13 @@
 # Illustrated Rascal art — migration batches
 
-The game originally draws 48×48 monster sprites procedurally from species definitions in `index.html`. This directory contains replacement transparent 96×96 front-view art for six first-stage starter evolutions, part of the ongoing migration to individually illustrated Rascal designs.
+This folder contains illustrated 96×96 transparent PNGs for all six middle and final starter evolutions.
 
-**Batch 01:** Thornpup, Cindercat, Brookfin, Joltwolf, Frostbear, and Shimmerwing.
+**Middle evolutions:** Thornpup, Cindercat, Brookfin, Joltwolf, Frostbear, Shimmerwing.
 
-The six starters have front/side/back illustrations under `assets/starter-sprites/`. These six new evolutions have **front views only**; their side/back views, color-shifted versions, and silhouettes still use the original procedural renderer. The loader in `index.html` selects illustrated views only when an actual PNG mapping exists. Right-facing follower sprites continue to mirror any available side view.
+**Final evolutions:** Bramblehound, Blazelynx, Tidalotl, Stormfang, Glaciursa, Celestrix.
 
-All replacement sprites are 96×96 transparent PNGs downscaled into 48×48 canvases by the renderer; `sw.js` precaches the additions for offline use.
+Each of these 12 species now has `<id>.png` (front), `<id>_side.png` (left-facing profile), and `<id>_back.png` (rear view). The base starters' matching sets live in `assets/starter-sprites/`.
+
+The renderer in `index.html` downsamples these to its existing 48×48 sprite canvas, while HTML portraits use 96×96 art. The existing renderer still handles other species, color-shifted variants, silhouettes, and any loading failures. Rightward followers mirror the side view. The directional images are currently static, not walk-cycle animation frames.
+
+The service worker precaches the artwork for offline use. See `migration-status.json` for per-species progress.
