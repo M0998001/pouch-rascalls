@@ -59,3 +59,16 @@ All four species now have 96×96 transparent front, left-profile side, and rear 
 These 10 species each have three transparent 96×96 PNGs: `<id>.png` for front-facing, `<id>_side.png` facing left, and `<id>_back.png` from behind. The existing renderer downsamples sprite assets to 48×48 as needed, mirrors side sprites to face right, and retains procedural fallback for unreplaced species, silhouettes, and hue variants. The offline cache precaches all 30 additions.
 
 **Progress: 47 of 103 species completely illustrated, 56 remaining.**
+
+## Batch 09: ten-species directional redesigns
+
+- Lilyhop → Lotusking (Tide / Leaf)
+- Masklet → Banditail (Shade / Plain)
+- Bubblub → Jellumi (Tide / Glimmer)
+- Seagulp (Gust / Tide; Galeon art still pending)
+- Duskpup → Gloamwolf (Shade; Lunarfang art still pending)
+- Thornbolt (Leaf / Spark hybrid)
+
+Each of these ten species now has 96×96 transparent front, left-profile side, and rear PNG artwork in `assets/rascals/`. The original procedural renderer remains a fallback for all remaining species, alternate-hue forms and silhouettes. The existing follower renderer mirrors left-facing profiles to show right-facing views. The offline service worker precaches all 30 added PNGs.
+
+**Progress: 57 of 103 species have all three illustrated views; 46 remain.**

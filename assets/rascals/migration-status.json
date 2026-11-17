@@ -513,7 +513,11 @@
         "Leaf"
       ],
       "evolvesTo": "lotusking",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "lotusking",
@@ -523,7 +527,11 @@
         "Leaf"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "masklet",
@@ -533,7 +541,11 @@
         "Plain"
       ],
       "evolvesTo": "banditail",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "banditail",
@@ -543,7 +555,11 @@
         "Plain"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "steamwhelp",
@@ -567,7 +583,11 @@
         "Spark"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "aurorabun",
@@ -586,7 +606,11 @@
         "Tide"
       ],
       "evolvesTo": "jellumi",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "jellumi",
@@ -596,7 +620,11 @@
         "Glimmer"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "seagulp",
@@ -606,7 +634,11 @@
         "Tide"
       ],
       "evolvesTo": "galeon",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "galeon",
@@ -1051,7 +1083,11 @@
         "Shade"
       ],
       "evolvesTo": "gloamwolf",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "gloamwolf",
@@ -1060,7 +1096,11 @@
         "Shade"
       ],
       "evolvesTo": "lunarfang",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "lunarfang",
