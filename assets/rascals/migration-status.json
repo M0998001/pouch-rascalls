@@ -335,7 +335,11 @@
         "Shade"
       ],
       "evolvesTo": "gloomwraith",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "gloomwraith",
@@ -344,7 +348,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "snoozle",
@@ -363,7 +371,11 @@
         "Stone"
       ],
       "evolvesTo": "krabastion",
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "krabastion",
@@ -373,7 +385,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "smoglet",

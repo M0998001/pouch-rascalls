@@ -37,3 +37,12 @@ Each of the seven species has transparent 96×96 front, left-facing side, and re
 Both species have hand-designed transparent 96×96 front, left-facing side, and back sprites, derived from a consistent six-view turnaround. The game continues using procedural fallbacks for all unillustrated species and color-shifted/silhouette variants.
 
 **Progress: 33 of 103 species have three illustrated views; 70 remain.**
+
+## Batch 07: ghosts and coastal crabs
+
+- Shadowisp → Gloomwraith (Shade)
+- Crabble → Krabastion (Tide / Stone)
+
+All four species now have 96×96 transparent front, left-profile side, and rear sprite images. Images are downscaled into the existing 48×48 game canvas, with mirrored right-side movement and original procedural fallback for non-migrated species, silhouettes, and color-shifted forms.
+
+**Progress: 37 of 103 species have three illustrated views; 66 remain.**
