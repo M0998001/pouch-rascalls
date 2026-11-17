@@ -1,3 +1,7 @@
-# Starter Rascal sprite artwork
+# Starter Rascal artwork
 
-These six transparent 96×96 PNGs are custom front-facing artwork for Sprigling, Emberkit, Puddlepip, Zippup, Snowcub, and Glintling. `index.html` displays the PNGs directly in front-facing HTML portraits and downsamples them into 48×48 canvases for the existing game renderer. The original procedural sprites remain in use for back views, side views, silhouettes, hue variants, evolutions, and other species. The service worker precaches these assets for offline play.
+The six starter creatures now have **three** transparent 96×96 PNG views each: `<id>.png` (front), `<id>_side.png` (left-facing profile), and `<id>_back.png` (rear-facing).
+
+The game renders all three custom orientations as 48×48 canvases where needed. HTML portraits use the original 96×96 files. The follower renderer already mirrors the side view for rightward movement, and battles use the rear sprites for the player's active Rascal.
+
+**Compatibility:** Hue-shifted forms and silhouettes, other species, and evolutions continue using the original procedural artwork. PNG files are pre-cached by the service worker for offline play. The directional art is static (no walk animation frames yet).
