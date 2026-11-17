@@ -127,3 +127,16 @@ All ten creatures received three 96×96 transparent PNG sprite views: `<id>.png`
 **Artwork notes:** The rocky dragon family, Lunarfang, and Stellet were extracted from a newly generated full-turnaround design sheet. Astraloom and Constellux are bespoke palette/geometry variations evolved from Stellet, featuring starfield cloaks and celestial details. Inklet, Tendrill, and Krakulon are recolored and substantially reworked illustrated aquatic forms with additional tentacles, jewel crests, and stage-specific silhouettes. The adapted evolutionary designs may benefit from a future character-specific polish pass.
 
 **Progress: 97 of 103 species have three illustrated views; 6 remain.**
+
+## Batch 14 — final six species (roster completion)
+
+- Leviathra — Tide / Shade abyssal sea serpent
+- Astraeon — Glimmer / Shade astral guardian
+- Ignivorn — Ember / Stone volcanic beast
+- Galefenrir — Gust / Shade storm wolf
+- Nightjack — Shade / Gust nocturnal jackal-like trickster
+- Valorhound — Glimmer / Plain heroic hound
+
+All six species have standalone transparent 96×96 PNGs for the front (`<id>.png`), left-facing profile (`<id>_side.png`) and rear (`<id>_back.png`). All 18 images were extracted and cleaned from dedicated three-view character turnarounds. Nightjack required a separate alpha-matte cleanup. The game still renders these as 48×48 canvases where needed and retains procedural fallback for hue-shifted variants, silhouettes, and unavailable artwork.
+
+**Roster milestone: all 103 species now have front, side, and back illustrations (309 PNGs).** Live browser gameplay QA and further bespoke polish remain potential follow-ups.

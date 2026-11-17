@@ -1338,7 +1338,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "astraeon",
@@ -1348,7 +1352,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "ignivorn",
@@ -1358,7 +1366,11 @@
         "Stone"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "galefenrir",
@@ -1368,7 +1380,11 @@
         "Shade"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "nightjack",
@@ -1378,7 +1394,11 @@
         "Gust"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     },
     {
       "id": "valorhound",
@@ -1388,7 +1408,11 @@
         "Plain"
       ],
       "evolvesTo": null,
-      "illustratedViews": []
+      "illustratedViews": [
+        "front",
+        "side",
+        "back"
+      ]
     }
   ],
   "completedThreeViewSpecies": 18,
