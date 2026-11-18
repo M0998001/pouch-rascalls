@@ -17,6 +17,6 @@ Open the link in Safari, tap **Share → Add to Home Screen**. It then launches 
 
 Art migration: 103 of 103 species now have front, side, and back PNGs. See `assets/rascals/migration-status.json` for the full per-species checklist.
 
-### Player and NPC character art (pilot paused)
+### Player and NPC pixel-art upgrade (v2)
 
-The experimental illustrated human renderer was **disabled after mobile visual QA uncovered distorted, disproportionate player and NPC sprites**. The game now uses its previous pixel-size-correct `personSprite` and `personCanvas` functions for all people, including character creation, the overworld, menus, and 2.5D. Saved character appearance and gameplay data are unaffected. The five NPC illustration sets remain in `assets/people/` for a future properly pixel-aligned art implementation; see `assets/people/README.md`.
+People now render directly to native **20×28 pixel** canvases via `assets/people/native-pixel-renderer.js`, instead of shrinking large portrait artwork. Front, side (mirrored for left), and back directions have distinct pixels, with alternating walking poses. All character creator choices and equipped hats stay supported; Hazel, Andrew/Pip, Warden Fern, Grandma, and Grumble Grunt get small outfit and identity details. The 96×128 people illustration pilot is still disabled and retained only as reference. If needed, add `?classicPeople=1` to the game URL to immediately use the original character renderer without changing saves. See `assets/people/README.md`.
