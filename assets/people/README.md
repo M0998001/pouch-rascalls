@@ -1,15 +1,16 @@
-# Illustrated player and NPC artwork
+# Human-character art pilot (temporarily disabled)
 
-The first character-art pilot updates the overworld, battle intro portraits, wardrobe previews, and existing 2.5D character drawing through a single renderer hook in `people-renderer.js`.
+**Status (November 2026): rolled back from active game rendering.**
 
-## Hand-illustrated named NPCs
+The original 16×18/20×28 canvas-based character implementation is active for the player and NPCs again. The first illustrated human pilot introduced a 96×128 vector avatar and resized it to 20×28 for the world, which distorted faces, hair, and proportions when pixel-scaled on mobile. It was not an appropriate production replacement.
 
-These five shared NPC looks have transparent 96×128 PNG turnarounds: **Hazel**, **Andrew / Pip**, **Warden Fern**, **Grandma**, and the **Grumble Grunt**. Every look has `_down.png` (front), `_side.png` (left-facing), and `_up.png` (back) views. The right-facing image is mirrored from the side. Movement uses an alternating one-pixel bob while walking, not hand-drawn footstep frames yet.
+The 15 transparent 96×128 PNGs remain here as concept/reference art for Hazel, Pip/Andrew, Warden Fern, Grandma, and Grumble Grunt. The experimental renderer source `people-renderer.js` is retained for reference **but is not loaded by `index.html` or precached by `sw.js`**.
 
-## Customizable player and other NPCs
+## Next implementation requirements
 
-To avoid breaking saved player looks and the wardrobe, the player uses a newly drawn, higher-resolution, palette-driven chibi renderer rather than a single fixed illustration. Existing options for skin tone, hairstyle, hair and eye colors, face details, tops, pants, shoes, and wearable hats remain supported. All other NPC looks use the same flexible renderer until they receive dedicated PNG art.
+- Render directly to the game's native 20×28 character canvas (or author true pixel-art frames at that exact pixel grid) instead of shrinking vector portraits.
+- Preserve the player creator's all hair, skin, eyes, face, clothes, accessories, and equipped hats.
+- Add real 4-direction walk frames and clear silhouettes, and verify at 1×, CSS-scaled, 2.5-D and iPhone mobile resolutions.
+- Only enable new art once the new player and NPC renderers have been visually compared at in-game size, in the actual character creator and overworld.
 
-The map still receives **20×28** canvases so pathfinding, drawing order, collisions, follower alignment, and 2.5D billboards retain their existing expectations. Character previews render at higher resolution. Original `drawPerson` is not removed and remains available to legacy code. If a PNG fails to load, its actor renders with the flexible character renderer instead. Assets are precached for offline play in `sw.js`.
-
-**Planned next:** hand-illustrated sailor, ranger, mystic, baker, bug catcher, and additional named characters; then true walking frames and a player-portrait quality pass.
+This is a rollback of the human-art pilot **only**; illustrated Rascal assets are unchanged.

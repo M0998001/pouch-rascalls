@@ -15,8 +15,8 @@ Open the link in Safari, tap **Share → Add to Home Screen**. It then launches 
 
 ## Artwork migration status
 
-Art migration: 24 of 103 species now have front, side, and back PNGs. See `assets/rascals/migration-status.json` for the full per-species checklist.
+Art migration: 103 of 103 species now have front, side, and back PNGs. See `assets/rascals/migration-status.json` for the full per-species checklist.
 
-### Updated human characters
+### Player and NPC character art (pilot paused)
 
-A separate illustrated people renderer (`assets/people/people-renderer.js`) now upgrades the customizable player appearance and five named NPC looks. Fifteen directional NPC PNGs live in `assets/people/`; existing player wardrobe choices and procedural fallback remain functional. See `assets/people/README.md`.
+The experimental illustrated human renderer was **disabled after mobile visual QA uncovered distorted, disproportionate player and NPC sprites**. The game now uses its previous pixel-size-correct `personSprite` and `personCanvas` functions for all people, including character creation, the overworld, menus, and 2.5D. Saved character appearance and gameplay data are unaffected. The five NPC illustration sets remain in `assets/people/` for a future properly pixel-aligned art implementation; see `assets/people/README.md`.
