@@ -8365,6 +8365,7 @@ for(const id of Object.keys(RASCAL_STARTER_PNG))
   for(const view of Object.keys(RASCAL_STARTER_PNG[id])) rascalStarterImage(id,view);
 // ===== End illustrated starter art =====
 </script>
+<script src="assets/people/people-renderer.js"></script>
 <script>
 document.getElementById('dialog').addEventListener('click',()=>{if(Dialog.active&&!Dialog.choices)Dialog.press('a');else if(Dialog.typing)Dialog.finishType();});
 bindTouch();UI.title();
