@@ -20,3 +20,7 @@ Art migration: 103 of 103 species now have front, side, and back PNGs. See `asse
 ### Player and NPC pixel-art upgrade (v2)
 
 People now render directly to native **20×28 pixel** canvases via `assets/people/native-pixel-renderer.js`, instead of shrinking large portrait artwork. Front, side (mirrored for left), and back directions have distinct pixels, with alternating walking poses. All character creator choices and equipped hats stay supported; Hazel, Andrew/Pip, Warden Fern, Grandma, and Grumble Grunt get small outfit and identity details. The 96×128 people illustration pilot is still disabled and retained only as reference. If needed, add `?classicPeople=1` to the game URL to immediately use the original character renderer without changing saves. See `assets/people/README.md`.
+
+### Living towns: Burrowby Village (pilot)
+
+Burrowby now has daytime produce and flower carts, two market residents and a daily neighbor delivery, a village noticeboard, seasonal flowerbeds, glowing evening lanterns, and scheduled routines for Tobin, Poppy and Old Rowan. All scenery is drawn on the native 16px map grid. The existing ranch, home, quests, and the other six towns are untouched. If needed, append `?quietBurrowby=1` to the URL to disable this pilot without affecting your saves. See `assets/towns/README.md` for details.
